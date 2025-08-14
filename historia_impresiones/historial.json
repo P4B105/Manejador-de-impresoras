@@ -1,0 +1,30 @@
+[
+    {
+        "usuario": "Carlos S\u00e1nchez",
+        "documento": "factura_2488.pdf",
+        "cantidad_hojas": 3,
+        "impresora": "HP LaserJet Pro M404dn",
+        "fecha_impresion": "2025-07-03 22:47:54"
+    },
+    {
+        "usuario": "Carlos S\u00e1nchez",
+        "documento": "factura_2488.pdf",
+        "cantidad_hojas": 3,
+        "impresora": "HP LaserJet Pro M404dn",
+        "fecha_impresion": "2025-07-03 22:49:57"
+    },
+    {
+        "usuario": "joinner",
+        "documento": "dw",
+        "impresora": "dfg",
+        "cantidad_hojas": 4,
+        "fecha_impresion": "2025-07-03 22:54:17"
+    },
+    {
+        "usuario": "joinner",
+        "documento": "dw",
+        "impresora": "dfg",
+        "cantidad_hojas": 4,
+        "fecha_impresion": "2025-07-03 23:01:20"
+    }
+]

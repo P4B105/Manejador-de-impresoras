@@ -1,0 +1,495 @@
+/*-------------------------------------------------------ASIGNACIONES GENERALES-------------------------------------------------------*/
+:root {
+    --color-blanco: #FFFFFF;
+    --color-grafito: #212529;
+    --color-azul-medianoche: #1A2B42;
+    --color-azul-medianoche-hover: #1a2b429f;
+    --color-gris-claro: #E9ECEF;
+    --color-azul-acero: #5A7B9B;
+    --color-verde-bosque: #0f4e20;
+    --color-rojo-ladrillo: #CC3333;
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--color-gris-claro)!important;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    cursor: pointer;
+    outline: none;
+}
+
+input::placeholder{
+    color: #788ca0;
+}
+
+/*--------------------ESTA PARTE CORRESPONDE A LA BARRA DE NAVEGACION QUE ESTA EN TODAS LAS PAGINAS NAV-BAR GENERAL--------------------*/
+.encabezado-header{
+    background-color: var(--color-azul-medianoche);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    min-height: 85px!important;
+    padding: 5px 10%;
+    box-sizing: border-box;
+}
+
+.encabezado-div-logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.encabezado-img-logo{
+    height: 70px;
+    width: auto;
+    border-radius: 0px;
+    transition: all 0.3s;
+}
+
+.encabezado-img-logo:hover{
+    transform: scale(1.2);
+}
+
+.encabezado-li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.encabezado-li:hover{
+    transform: scale(1.1);
+}
+
+.encabezado-ul{
+    list-style: none;
+}
+
+.encabezado-a{
+    text-decoration: none;
+    font-size: 700;
+    color:#ECF0F1;
+}
+
+.encabezado-a:hover{
+    color: var(--color-gris-claro);
+    text-shadow: 1px 1px 10px white;
+}
+
+.encabezado-button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #E9ECEF;
+    padding: 9px 25px;
+    background: var(--color-azul-acero);
+    border-radius: 50px;
+    cursor:pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+.encabezado-button:hover{
+    color: #ECF0F1;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 10px white;
+}
+
+/*----------------------------------------DE ACA PARA ABAJO SE LE DA ESTILO AL "INDEX.PHP"----------------------------------------*/
+.index-body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-div-sesion{
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 12%;
+    height: 43%;
+    width: 24%;
+    min-height: 300px;
+    padding: 2%;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: var(--color-blanco); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.index-h1{
+    margin: 0;
+    margin-top: 4%;
+    color: var(--color-grafito);
+}
+
+.index-input{
+    width: 100%;
+    height: 30%;
+    padding: 4%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-gris-claro);
+    border: 2.5px solid transparent;
+    color: var(--color-grafito);
+}
+
+.index-input:focus{
+    border: 2.5px solid var(--color-azul-medianoche)!important; 
+}
+
+.index-input:hover{
+    border: 2.5px solid var(--color-azul-medianoche-hover);
+}
+
+.index-input-submit{
+    width: 80%;
+    height: 28%;
+    margin-top: 10%;
+    padding: 1%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-azul-medianoche);
+    color: white;
+    border: 2.5px solid transparent;
+}
+
+.index-input-submit:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.index-input-submit:focus{
+    box-shadow: 1px 3px 10px 0 #0000008f;
+}
+
+.index-label{
+    margin-right: 90%;
+    padding: 1%;
+    color: var(--color-grafito);
+}
+
+.index-p{
+    color: var(--color-grafito); 
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+.index-p-error{
+    margin: 1% auto;
+    
+}
+
+.index-errorMsg{
+    color: var(--color-rojo-ladrillo);
+    font-size: large;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.index-a{
+    color: var(--color-verde-bosque);
+    text-decoration: none!important
+}
+
+.index-a:hover{
+    text-shadow: 1px 1px 20px #00ff44;
+}
+
+/*----------------------------------------DE ACA PARA ABAJO SE LE DA ESTILO AL "REGISTRO.HTML"----------------------------------------*/
+.registro-body{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gris-claro);
+}
+
+.registro-div-formulario{
+    height: 65%;
+    min-height: 380px;
+    width: 40%;
+    margin: auto auto;
+    margin-bottom: 0;
+    padding: 2%;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: var(--color-blanco); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.registro-div-nombre-apellido-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    gap: 3%;
+    margin-bottom: 3%;
+}
+
+.registro-h1{
+    margin: 0;
+    margin-top: 0%;
+    color: var(--color-grafito);
+}
+
+.registro-input{
+    width: 100%;
+    height: 18%;
+    padding: 2%;
+    margin-bottom: 3%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-gris-claro);
+    border: 2.5px solid transparent;
+    color: var(--color-grafito)
+}
+
+.registro-input-nombre, .registro-input-apellido{
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-gris-claro);
+    border: 2.5px solid transparent;
+    color: var(--color-grafito);
+}
+
+.contraseña{
+    margin-bottom: 4%;
+}
+
+.registro-input-submit{
+    width: 60%;
+    height: 18%;
+    margin-top: 1%;
+    padding: 2%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-azul-medianoche);
+    color: white; 
+    border: 2.5px solid transparent;
+}
+
+.registro-p{
+    margin: auto;
+    color: var(--color-grafito); 
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.registro-a{
+    color: var(--color-verde-bosque);
+    text-decoration: none;
+}
+
+.registro-a:hover{
+    text-shadow: 1px 1px 20px #00ff44;
+}
+
+.registro-input-apellido:focus, .registro-input-nombre:focus, .registro-input:focus{
+    border: 2.5px solid #1A5276!important;
+}
+
+.registro-input-apellido:hover, .registro-input-nombre:hover, .registro-input:hover{
+    border: 2.5px solid #1a53766e;
+}
+
+.registro-input-submit:hover{
+    text-shadow: 0 0 5px white;
+}
+
+.registro-input-submit:focus{
+    box-shadow: 1px 3px 10px 0 #0000008f;
+}
+
+/*---------------------------------------ESTA PARTE ES EL ESTILO DE LA PAGINA DASHBOARD.PHP----------------------------------------*/
+.dashboard-body{
+    background-color: var(--color-gris-claro)!important;
+}
+
+.dashboard-h1{
+    color: var(--color-grafito)!important;
+}
+
+.dashboard-h2{
+    color: var(--color-grafito)!important;
+}
+
+.dashboard-p{
+    color: var(--color-azul-acero)!important;
+}
+
+.dashboard-button{
+    background-color: var(--color-azul-medianoche);
+    transition: all 0.3s;
+}
+
+.dashboard-button:hover{
+    background-color: var(--color-azul-medianoche);
+    text-shadow: 0 0 10px white;
+    transform: scale(1.1)
+}
+
+.printer-card {
+            transition: all 0.3s ease;
+        }
+.printer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.253);
+}
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+.online {
+    background-color: #10B981;
+    box-shadow: 0 0 5px #10B981;
+}
+.offline {
+    background-color: #EF4444;
+    box-shadow: 0 0 5px #EF4444;
+}
+.warning {
+    background-color: #F59E0B;
+    box-shadow: 0 0 5px #F59E0B;
+}
+.toner-low {
+    color: #F59E0B;
+    font-weight: 600;
+}
+.toner-critical {
+    color: #EF4444;
+    font-weight: 700;
+}
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/*---------------------------------------ESTA PARTE ES EL ESTILO DE LA PAGINA FORMULARIO_IMPRESORA.PHP-------------------------------------------*/
+.formulario_impresora-body{
+    background-color:var(--color-gris-claro)!important;
+}
+
+.formulario_impresora-h1{
+    color: var(--color-grafito)!important;
+}
+
+.formulario_impresora-h2{
+    color: var(--color-grafito)!important;
+}
+
+.formulario_impresora-label{
+    color: var(--color-grafito)!important;
+}
+
+.formulario_impresora-input{
+    background-color: var(--color-gris-claro)!important;
+}
+
+.formulario_impresora-input:hover{
+    outline: 2px solid var(--color-azul-medianoche-hover);
+}
+
+.formulario_impresora-button-limpiar{
+    background-color: #ffffff36;
+    color: rgb(0, 0, 0)!important;
+    transition: all 0.3s;
+}
+
+.formulario_impresora-button-limpiar:hover{
+    background-color: #1A5276!important;
+    color: rgb(255, 255, 255)!important;
+    text-shadow: 0 0 10px white;
+}
+
+.formulario_impresora-button-registrar{
+    background-color: var(--color-azul-medianoche)!important;
+    transition: all 0.3s;
+}
+
+.formulario_impresora-button-registrar:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.formulario_impresora-button-registrar:focus{
+    box-shadow: 1px 3px 10px 0 #000000;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+.form-container {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*---------------------------------------ESTA PARTE ES EL ESTILO DE LA PAGINA REGISTRAR_IMPRESION.PHP-------------------------------------------*/
+.registrar_impresion-body{
+    font-family: 'Segoe UI', sans-serif; background: var(--color-gris-claro);
+}
+
+.registrar_impresion-div{
+    margin: auto auto;
+    margin-top: 5%;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+    padding: 4%!important;
+}
+
+.registrar_impresora-select{
+    outline: none;
+    background-color: var(--color-gris-claro);
+}
+
+.registrar_impresora-select:hover{
+    border: 2px solid var(--color-azul-medianoche-hover);
+}
+
+.registrar_impresora-select:focus{
+    border: 2px solid var(--color-azul-medianoche)!important; 
+}
+
+.registrar_impresora-input{
+    outline: none;
+    width: 96.3%!important;
+    background-color: var(--color-gris-claro);
+}
+
+.registrar_impresora-input:hover{
+    border: 2px solid var(--color-azul-medianoche-hover);
+}
+
+.registrar_impresora-input:focus{
+    border: 2px solid var(--color-azul-medianoche)!important; 
+}
